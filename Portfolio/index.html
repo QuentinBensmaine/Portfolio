@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Mon Portfolio</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta title="Portfolio de Quentin Bensmaine">
+    <meta description="Je me présente, Quentin Bensmaine, je suis actuellement en
+    formation à l'ecole YNOV">
+    <meta keyword="Portfolio Quentin Bensmaine">
+    <link rel="stylesheet" type="text/css" media="screen" href="style/style.css" />
+    <link href="style/icon.png" rel="icon" type="image/jpg">
+    <link href="https://fonts.googleapis.com/css?family=ZCOOL+QingKe+HuangYou" rel="stylesheet">
+</head>
+
+<body>
+        <section id="Back"></section>
+        <!--Fond-->
+        <section id="tout">
+            <!--Page d'acceuil-->
+            <div id="Acceuil" v-if="!See">
+                <h2>Bienvenue sur mon portfolio!</h2>
+                <p class="nom">Quentin BENSMAINE</p>
+                <section class="fonc">
+                    <button id="go" class="btn"> <span>Voir</span></button>
+                </section>
+            </div>
+            <!--Fin page d'acceuil-->
+            <div id="gen">
+                <section id="sidebar" style="display: none">
+                    <h1>Quentin Bensmaine</h1>
+                    <section id="photo"></section>
+                    <div id="contact">
+                        <div id="cont" class="mail">
+                            <img src="style/mail.png" alt="mail logo" class="logo"><br>
+                            quentin.bensmaine@ynov.com
+                        </div>
+                        <div id="cont" class="tel">
+                            <img src="style/phone.png" alt="mail logo" class="logo"><br>
+                            0662809309</div>
+                        <div id="cont" class="linkedin">
+                            <img src="style/linkedin.png" alt="mail logo" class="logo"><br>
+                            <a href="https://www.linkedin.com/in/quentin-bensmaine-7900a5170/"
+                                target="blank">Linkedin</a>
+                        </div>
+                    </div>
+                </section>
+                <div id="back" class="hidden btn">Retour</div>
+                <section id="droite" style="display: none">
+                    <div id="select">
+                        <div id="partie" class="skills">
+                            <p>Compétences</p>
+                        </div>
+                        <div id="partie" class="exp">
+                            <p>Expériences professionnelles</p>
+                        </div><br>
+                        <div id="partie" class="diplomes">
+                            <p>Diplômes</p>
+                        </div>
+                        <div id="partie" class="works">
+                            <p>Projets</p>
+                        </div>
+                    </div>
+                    <div id="champ">
+                        <form action='connection.php' method='POST'>
+                        <input name='mail' type='text'placeholder="Adresse mail">
+                        <input name='pseudo' type='text' placeholder="Pseudo">
+                        <input name='msg' type='text'placeholder="Message">
+                        <input type='submit'>
+                    </div>
+                    <section class="hidden" id="works">
+                        <p>Workshop 2019<br>
+                            <a href="gullung.com">Site</a></p>
+                        <video controls width="100%" height="50%">
+                            <source src="INTRO_BOLDAGENCY_V.33.mp4" type="video/mp4">
+                        </video>
+                        <p>Vous avez <a href="https://github.com/QuentinBensmaine/Projet-ISN">ici</a> un lien vers un de
+                            mes
+                            projets. C'est un jeu narratif en Java crée sur <a
+                                href="https://processing.org/download/">Processing</a>.</p>
+                        <img src="style/CAPTURE.png" alt="capture d'écran du code" id="img">
+                    </section>
+                    <section class="hidden" id="skills">
+                        <div class="skillbar clearfix " data-percent="90%">
+                            <div class="skillbar-title" style="background: #160272;"><span>HTML5</span></div>
+                            <div class="skillbar-bar" style="background: #320e94;"></div>
+                            <div class="skill-bar-percent">90%</div>
+                        </div> <!-- End Skill Bar -->
+
+                        <div class="skillbar clearfix " data-percent="75%">
+                            <div class="skillbar-title" style="background: #3a0466;"><span>CSS3</span></div>
+                            <div class="skillbar-bar" style="background: #6220ad;"></div>
+                            <div class="skill-bar-percent">75%</div>
+                        </div> <!-- End Skill Bar -->
+
+                        <div class="skillbar clearfix " data-percent="75%">
+                            <div class="skillbar-title" style="background: #3a0466;"><span>Java</span></div>
+                            <div class="skillbar-bar" style="background: #6220ad;"></div>
+                            <div class="skill-bar-percent">75%</div>
+                        </div> <!-- End Skill Bar -->
+
+                        <div class="skillbar clearfix " data-percent="70%">
+                            <div class="skillbar-title" style="background: #462057;"><span>JavaScript</span></div>
+                            <div class="skillbar-bar" style="background: #8235a5;"></div>
+                            <div class="skill-bar-percent">70%</div>
+                        </div> <!-- End Skill Bar -->
+
+                        <div class="skillbar clearfix " data-percent="65%">
+                            <div class="skillbar-title" style="background: #05436d;"><span>C</span></div>
+                            <div class="skillbar-bar" style="background: #008ae6;"></div>
+                            <div class="skill-bar-percent">65%</div>
+                        </div> <!-- End Skill Bar -->
+
+                        <div class="skillbar clearfix " data-percent="90%">
+                            <div class="skillbar-title" style="background: #160272;"><span>Anglais</span></div>
+                            <div class="skillbar-bar" style="background: #320e94;"></div>
+                            <div class="skill-bar-percent">90%</div>
+                        </div> <!-- End Skill Bar -->
+
+                        <div class="skillbar clearfix " data-percent="65%">
+                            <div class="skillbar-title" style="background: #05436d;"><span>Espagnol</span></div>
+                            <div class="skillbar-bar" style="background: #008ae6;"></div>
+                            <div class="skill-bar-percent">65%</div>
+                        </div> <!-- End Skill Bar -->
+
+                        <div class="skillbar clearfix " data-percent="70%">
+                            <div class="skillbar-title" style="background: #462057;"><span>MicrosoftOffice</span></div>
+                            <div class="skillbar-bar" style="background: #8235a5;"></div>
+                            <div class="skill-bar-percent">70%</div>
+                        </div> <!-- End Skill Bar -->
+                    </section>
+                    <section class="hidden" id="exp">
+                        <img src="style/dropin.png" alt="dropin logo" class="dropin">
+                        <p>EMPLOYE POLYVALENT : DROP’IN DRACENIE
+                            07/18 – 08/18
+                            Accueil des clients, surveillance du parc aquatique, travaux pour l’agrandissement du parc.
+                        </p>
+                        <p>EMPLOYE POLYVALENT : PARC DE LOISIRS VIDAUBAN
+                            07/17 – 08/17
+                            Accueil des clients, surveillance du parc acrobranche</p>
+                        <img src="style/logo.jpg" alt="logo parc aventure" id="img">
+                    </section>
+                    <section class="hidden" id="diplomes">
+                        <img src="style/bac.png" alt="baccalauréat" id="img">
+                        <p>BACCALAUREAT MENTION TRES BIEN, MENTION ANGLAIS EUROPEEN (2018)
+                            Lycée du Val d’Argens Le Muy
+                            16,06/20 ; Filière scientifique branche science de l’ingénieur, spécialisation Informatique
+                            et
+                            Science du Numérique, option anglais européen (histoire).</p><br>
+                        <img src="style/cambridge.png" alt="diplome BBC Learning English" id="img">
+                        <p>Certification Cambridge English niveau B1</p>
+                    </section>
+                </section>
+                <section id="description" style="display:none">
+                    <p>Je me présente, Quentin Bensmaine, je suis actuellement en
+                        formation à l'ecole <a
+                            href="https://www.ynov.com/?gclid=EAIaIQobChMI2tnxrvnl4AIV1oTVCh3fzQg1EAAYASAAEgLMyfD_BwE">
+                            YNOV
+                        </a> sur le campus d'Aix-en-Provence dans la formation Ingésup. Cette formation
+                        me délivrera un
+                        Master en informatique avec une spécialisation dans le développement.<br>
+                        Je m'intéresse à énormément de différentes choses ce qui fait de moi quelqu'un de polyvalent.
+                        Parmi
+                        celles-ci se trouve (évidemment) l'informatique et ce qui s'en rapproche comme les nouvelles
+                        technologies ou même la robotique, mais je suis surtout passionné par les voyages. J'en ai déjà
+                        fait
+                        un certain nombre dont plusieurs en Australie, aux Etats-Unis, ansi qu'en Engleterre.<br>
+                        Vous trouverez ci-dessous mon CV téléchargeable</p>
+                    <!-- <button id="go" class="btn" type="submit" onclick="window.open('CV.pdf')"><span>CV</span></button> -->
+                    <a class="btn" href='CV.pdf' target='_blank'>CV</a>
+                </section>
+            </div>
+        </section>
+</body>
+<script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/velocity/1.2.3/velocity.min.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<script src="js/script.js"></script>
+
+</html>

@@ -1,0 +1,381 @@
+body, html{
+    height: 100%;
+    margin: 0;
+	font-family: 'ZCOOL QingKe HuangYou', Times, serif;
+	overflow-x: hidden;
+	overflow-y: auto;
+	background-color: rgb(89, 130, 167);
+}
+
+#Back{
+	position: fixed;
+	top: 0;
+	background-size: cover;
+	background-position: center top;
+	background-repeat: no-repeat;
+	width: 100%;
+	height: 100%;
+	z-index: -1;
+}
+
+#Acceuil{
+	position: absolute;
+	background-color: #fff;
+	border: 5px solid rgba(200,200,200,1);
+	width: 20%;
+	text-align: center;
+	left: 40%;
+	top: 30%;
+	padding: 10px;
+	box-shadow: 0px 5px 10px rgba(0,0,0,.25);
+  border-radius: 15px;
+}
+
+#gen{
+  display: inline-flex;
+}
+
+#go{
+    display: inline-block;
+    text-align: center;
+    padding: 20px;
+    width: 100px;
+    cursor: pointer;
+}
+
+#go span {
+    cursor: pointer;
+    display: inline-block;
+    position: relative;
+    transition: 0.4s;
+  }
+  
+#go span:after {
+    content: '\00bb';
+    position: absolute;
+    opacity: 0;
+    top: 0;
+    right: -20px;
+    transition: 0.2s;
+	}
+  
+#go:hover span {
+    padding-right: 25px;
+  }
+  
+#go:hover span:after {
+    opacity: 1;
+    right: 0;
+  }
+
+  .btn{
+	border-radius: 5px;
+	border: 2px solid gray;
+	background-color: rgba(200,200,200,1);
+	
+}
+
+.btn:hover{
+    background-color: black;
+    color: white;
+	right: 0%;
+}
+
+#sidebar{
+	width: 40vh;
+	height: 90vh;
+  display: inline-block;
+  text-align: center;
+	background-color: grey;
+	box-shadow: 0px 4px 6px rgba(0,0,0,0.6);
+	border-radius: 5px;
+  margin: 2%;
+}
+
+#photo{
+    width: 75%;
+    height: 40vh;
+    margin: 12%;
+    border-radius: 5px;
+		background-image: url(moi.JPG);
+		background-size: cover;
+		background-position: center;
+}
+#photo h1{
+  padding-top: 25px;
+}
+
+#contact{
+  margin: 5%;
+}
+
+#cont{
+  margin-bottom: 10%;
+}
+
+a{
+font-weight: bold;
+outline: none;
+text-decoration: none;
+color: black
+}
+
+a:hover{
+  color: crimson;
+  border-bottom: 1px solid;
+}
+
+.logo{
+  width: 10%;
+  height: 10%;
+}
+#droite{
+  width: 50%;
+  margin: 2% 0 0 0;
+}
+
+#droite .hidden{
+width: 100%;
+}
+
+.hidden p{
+	text-align: center;
+	padding: 2%;
+	background-color: gray;
+	box-shadow: 0px 4px 6px rgba(0,0,0,0.6);
+	border-radius: 5px;
+	  margin: 2%;
+}
+
+#partie{
+	text-align: center;
+	opacity: 0.8;
+  width: 200px;
+  height: 200px;
+  display: inline-flex;
+  margin: 30px;
+	background-size: 80%;
+	background-repeat: no-repeat;
+	background-position: center;
+	background-color: darkgray;
+	box-shadow: 0px 4px 6px rgba(0,0,0,0.6);
+	transition: 500ms;
+	font-size: 20px;
+}
+#partie:hover{
+	background-color: rgba(142, 214, 211, 0.75);
+	width: 220px;
+	height: 220px;
+	margin: 20px;
+	margin-bottom: 10px;
+	cursor: pointer;
+	font-size: 25px;
+}
+
+#partie p{
+	width: 100%;
+	text-align: center;
+	margin: 0, 0, 2%, 0;
+	color: whitesmoke;
+}
+
+.skills{
+	border-radius: 5px 20px 5px;
+	background-image: url(skill.png);
+}
+.exp{
+	border-radius: 20px 5px 20px;
+	background-image: url(exp.png);
+}
+.diplomes{
+	border-radius: 20px 5px 20px;
+	background-image: url(diplome.png);
+}
+.works{
+	border-radius: 5px 20px 5px;
+	background-image: url(code.png);
+}
+
+h2{
+	text-transform: uppercase;
+	background-color: rgba(200,200,200,1);
+	border-radius: 15px;
+}
+
+.hidden{
+	display: none;
+}
+
+#select{
+  position: inherit;
+  text-align: center;
+  margin: 0;
+}
+.skillbar {
+	position:relative;
+	display:block;
+	margin-bottom:15px;
+	width:100%;
+	background:#eee;
+	height:35px;
+	border-radius:3px;
+	-moz-border-radius:3px;
+	-webkit-border-radius:3px;
+	-webkit-transition:0.4s linear;
+	-moz-transition:0.4s linear;
+	-ms-transition:0.4s linear;
+	-o-transition:0.4s linear;
+	transition:0.4s linear;
+	-webkit-transition-property:width, background-color;
+	-moz-transition-property:width, background-color;
+	-ms-transition-property:width, background-color;
+	-o-transition-property:width, background-color;
+	transition-property:width, background-color;
+}
+
+.skillbar-title {
+	position:absolute;
+	top:0;
+	left:0;
+width:110px;
+	font-weight:bold;
+	font-size:13px;
+	color:#ffffff;
+	background:#6adcfa;
+	-webkit-border-top-left-radius:3px;
+	-webkit-border-bottom-left-radius:4px;
+	-moz-border-radius-topleft:3px;
+	-moz-border-radius-bottomleft:3px;
+	border-top-left-radius:3px;
+	border-bottom-left-radius:3px;
+}
+
+.skillbar-title span {
+	text-align: center;
+	display:block;
+	background:rgba(0, 0, 0, 0.1);
+	padding:0 20px;
+	height:35px;
+	line-height:35px;
+	-webkit-border-top-left-radius:3px;
+	-webkit-border-bottom-left-radius:3px;
+	-moz-border-radius-topleft:3px;
+	-moz-border-radius-bottomleft:3px;
+	border-top-left-radius:3px;
+	border-bottom-left-radius:3px;
+}
+
+.skillbar-bar {
+	height:35px;
+	width:0px;
+	background:#6adcfa;
+	border-radius:3px;
+	-moz-border-radius:3px;
+	-webkit-border-radius:3px;
+}
+
+.skill-bar-percent {
+	position:absolute;
+	right:10px;
+	top:0;
+	font-size:11px;
+	height:35px;
+	line-height:35px;
+	color:#ffffff;
+	color:rgba(0, 0, 0, 0.4);
+}
+
+#back{
+	padding: 10px;
+	width: 75px;
+  height: 25px;
+	cursor: pointer;	
+	margin: 5%;
+}
+
+#description{
+	line-height: 1.5;
+	width: 25%;
+	height: 80vh;
+	position: relative;
+  display: inline-block;
+  text-align: center;
+	background-color: grey;
+	box-shadow: 0px 4px 6px rgba(0,0,0,0.6);
+	border-radius: 5px;
+	margin: 2%;
+	padding: 2%;
+	opacity: 0.8;
+}
+.dropin{
+	width: 50%;
+	height: 200px;
+}
+#img{
+	width: 100%;
+	height: 200px;
+	border-radius: 5px;
+	display: inline-block;
+}
+
+#skills{
+	margin-top: 50px;
+}
+
+#form{
+	margin: 2%;
+	display: block;
+	border: 5px solid rgba(200,200,200,1);
+	border-radius: 15px;
+}
+
+form{
+	display: block;
+
+}
+
+input[type=text], [type=password], [type=number], [type=date], select{
+    padding: 10px;
+	width: 150px;
+	border-radius: 5px;
+	margin: 5px;;
+}
+select{
+cursor: pointer;
+}
+
+#descript{
+	width: 200px;
+	height: 50px;
+}
+
+table {
+	border-collapse: collapse;
+	border-radius: 5px;
+	margin: 2px;
+  }
+  
+  td, th {
+	border: 2px solid #aaaaaa;
+	border-radius: 5px;
+	text-align: left;
+	padding: 8px;
+  }
+
+  th{
+	  background-color: black;
+	  color: white;
+  }
+  
+  td:nth-child(odd) {
+	background-color: #dddddd;
+  }
+
+.dipl{
+	text-align: center;
+	padding: 2%;
+	background-color: gray;
+	box-shadow: 0px 4px 6px rgba(0,0,0,0.6);
+	border-radius: 5px;
+	margin: 2%;
+	}
